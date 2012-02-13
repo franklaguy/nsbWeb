@@ -5,7 +5,7 @@
 /* ***************** Begin Login ******************* */
 var ADMINTAB = {					// namespace
 		container: "#adminTab", // hidden div
-		url: "/nsb/tech/login", // ajaxify
+		url: "/nsbWeb/tech/login", // ajaxify
 		form: "form#login",     // form
 		
 		load: function(){       					// function
@@ -36,8 +36,8 @@ var LOGIN = function (){					// onclick function
 	var data = $(form).serialize();			// JSON
 	
 	// post json data - query database - check if exists - process form
-	$.post('/nsb/tech/login', data);
-	$(form).attr('action', '/nsb/tech/login');
+	$.post('/nsbWeb/tech/login', data);
+	$(form).attr('action', '/nsbWeb/tech/login');
 }
 /* ***************** End Login ********************* */
 
