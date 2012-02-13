@@ -1,0 +1,17 @@
+<?php echo $this->doctype(); // DocType HTML5 ?>
+<!--[if lt IE 7]> <html lang="en-us" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" class="no-js"> <!--<![endif]-->
+<head>
+<?php 
+	echo $this->headMeta(); // load Meta data
+	echo $this->headTitle(); // load title
+	echo $this->headLink()->appendStylesheet(Zend_Controller_Front::getInstance()->getBaseUrl().'/cdn/css/curve.css') // load curve style
+												->appendStylesheet(Zend_Controller_Front::getInstance()->getBaseUrl().'/cdn/css/global.css') // load global style
+												->appendStylesheet(Zend_Controller_Front::getInstance()->getBaseUrl().'/cdn/css/screen.css'); // load custom style
+
+	// load jQuery
+	echo $this->headScript()->prependFile('http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js', 'text/javascript'); 				
+?> 
+</head>

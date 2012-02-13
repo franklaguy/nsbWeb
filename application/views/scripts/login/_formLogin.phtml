@@ -1,0 +1,31 @@
+<?php 
+	$registerLink = BASEURL.'/nsb/tech/login/register'; 
+	$loginLink = BASEURL.'/nsb/tech/login';
+	
+	$form = "";
+	$form .= "<legend>".$this->element->getLegend()."</legend>";
+	$form .= "<form id='".$this->element->getName()."' action='".$this->element->getAction()."' method='".$this->element->getMethod()."'>";
+	
+	if ($_SERVER['REQUEST_URI'] === $registerLink){
+			$form .= $this->element->fname; 
+			$form .= $this->element->lname;
+			$form .= $this->element->email;
+			$form .= $this->element->phone;
+	}
+
+	$form .= $this->element->username;
+	$form .= $this->element->password;
+
+	if ($_SERVER['REQUEST_URI'] === $registerLink){
+		$form .= $this->element->passwordConfirm; 
+	}
+	
+	$form .= $this->element->submit;
+
+  //if ($_SERVER['REQUEST_URI'] === $loginLink){
+		//$form .= "<p><a href='".BASEURL."login/register'>New Users Register Here</a></p>";
+	//}
+		
+	$form .= "</form>";
+	echo $form;
+?>

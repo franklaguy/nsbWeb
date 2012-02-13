@@ -1,0 +1,39 @@
+<section id="formsCurve">
+	<h2>Forms</h2>
+	<p>There are differences in the way browsers display input fields. The general type is text. HTML5 introduces types:</p>
+	<ul>
+		<li>email - </li>
+		<li>url - </li>
+		<li>number - </li>
+		<li>range - </li>
+		<li>date/time - </li>
+		<li>search - </li>
+		<li>tel - </li>
+		<li>*autofocus - </li>
+		<li>*placeholder</li>
+	</ul>
+	<p>Browsers such as Opera and Safari interpret the different types and react based upon that info. For instance, the date/time type in FF will display date and time whereas Opera will display a calendar widget.</p>
+	<p>sample - range: <form><input type="range" max="10" min="0" step="2" /></form> 
+	<p>*view form in chrome</p>
+	<form method="get"> 
+		<label for="find-contact">Find an existing contact</label>:<input arprops=",,149px,14px,none,none,static,auto,visible,,," name="find-contact" id="find-contact" placeholder="enter a name" type="search"><input value="Find" type="button"> 
+		<fieldset> 
+			<legend>Make a new contact</legend> 
+			<ul class="ulCurve"> 
+				<li><label for="name">name</label>:<input arprops=",,149px,14px,none,none,static,auto,visible,,," name="name" id="name" placeholder="enter your name"  type="text"></li> 
+				<li><label for="telephone">phone number</label>:<input arprops=",,149px,14px,none,none,static,auto,visible,,," name="telephone" id="telephone" placeholder="enter your phone number" type="tel"></li> 
+				<li><label for="email">email</label>: <input arprops=",,149px,14px,none,none,static,auto,visible,,," name="email" id="email" placeholder="enter your email address" type="email"></li> 
+				<li><label for="website">website</label>: <input arprops=",,149px,14px,none,none,static,auto,visible,,," name="website" id="website" placeholder="enter your web site address" type="url"></li> 
+				<li><label for="DOB">date of birth</label>:<input arprops=",,149px,14px,none,none,static,auto,visible,,," name="DOB" id="DOB" value="2000-10-10" type="date"></li> 
+			</ul> 									 
+			<fieldset> 
+				<legend>rate your skills in the following (1="huh?" to 5="guru")</legend> 											
+				<ul class="ulCurve"> 
+					<li><label for="CSS">CSS</label>:<input arprops=",,149px,14px,none,none,static,auto,visible,,," min="1" max="5" step="1" name="CSS" id="CSS" type="range"></li> 
+					<li><label for="HTML">HTML</label>:<input arprops=",,149px,14px,none,none,static,auto,visible,,," min="1" max="5" step="1" name="HTML" id="HTML" type="number"></li> 
+					<li><label for="JS">JavaScript</label>:<input arprops=",,149px,14px,none,none,static,auto,visible,,," min="1" max="5" step="1" name="JS" id="JS" type="range"></li> 
+				</ul> 									 
+			</fieldset> 										
+		</fieldset> 
+	</form> 
+</section>

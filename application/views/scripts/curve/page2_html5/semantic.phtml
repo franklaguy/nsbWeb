@@ -1,0 +1,17 @@
+<section id="semantic">
+	<h1>HTML5 Semantic markup</h1>
+	<p>One way to get HTML5 to work in all browsers is to use a boolean value with your element. This works in FF, Chrome, IE7, IE8 (element="true"). Once the boolean value is added css styling will be easily accepted.</p>
+	<p>Notice: without the boolean value most browsers will not pick up the HTML5 element and therefore would not pick up the style.</p>
+	<p>IE7+ Modern Browsers:<br />
+		css - [section] {color: red}<br />
+		html -  &lt;section="true"&gt;It was a dark and stormy night&lt;/section&gt;<br />
+		IE8+ Modern Browsers:<br />
+		css - section {color: red}<br />
+		html - &lt;section section="true"&gt;It was a dark and stormy night&lt;/section&gt;</p>
+</section>
+<section id="footerCurve">
+	<footer>
+		<h3>Footer</h3>
+		<time datetime="2012-1-12" pubdate>Jan 2012</time>
+	</footer>
+</section>

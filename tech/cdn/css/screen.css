@@ -1,0 +1,50 @@
+/* Author: R. Lewis - Date: 1/12/12 - nSb web *******/
+/****************************************************/
+@charset "UTF-8";
+body {background-image:url(../images/bg3.jpg);background-attachment:fixed;width:700px;margin:30px auto;}		
+.container {background-image: url(../images/metal.bmp);width:668px;overflow: hidden;border-style:outset;}
+::selection, ::-moz-selection, ::-webkit-selection {background:#000;}
+
+/* Header *******************************************/	
+#header {width:660px;height:125px;padding: 1px;border:inset;background-image: url(../images/nSbHeader.png);}
+
+/* Navigation ***************************************/
+#nav {background-image:url(../images/metal.bmp);border-style:outset;text-align:left;padding:2px 5px;}
+	#nav ul li {border-right:1px solid #ccc;padding:2px 10px;}
+	#nav ul li:last-child {border-right:none;}
+		
+/* left Panel Navigation ****/
+#leftPanel {margin:7px 0 0;border-style:outset;width:148px;border-top-width:thick;border-bottom-width:thick;position:relative;}
+.toggleNav {background-image:url(../images/metal.bmp);outline:0;cursor:pointer;color:#ccc;border-top: solid 1px #999;padding:2px;}
+.toggleNav:hover,.leftNavContent0 p:hover,.leftNavContent p:hover {color:#fff;background:#333;}
+.leftNavContent, .leftNavContent0 {margin: 0px;padding: 0px;width: 147px;background-image:url(../images/cage.gif);outline:0;
+		border-left: solid 1px #CCC;border-right: solid 1px #999;border-top: solid 1px #999;border-bottom: solid 1px #CCC;}
+.leftNavContent p, .leftNavContent0 p {border-top: solid 1px #CCC;outline:0;}
+
+/* Footer *******************************************/
+.footer {font-size:10px;text-align:center;color:#CCCCCC;width:665px;padding-top:5px;clear:both;
+	background-image: url(../images/metal.bmp);border-style:outset;border-width:thick;}
+	.footer ul li {padding:0 3px;}
+	.footer p {padding:3px 0 6px;}
+
+/* Content ******************************************/
+.rightBox {float: right;width:480px;overflow:hidden;padding:7px;margin:7px 7px 3px;overflow:hidden;
+	background-image:url(../images/metal.bmp);border-style:inset;border-width:thick;}
+.rightBox.txt {background-color:#333;background-image:none;}
+.rightSubBox {float:left;margin:5px;border-style:outset;border-width:thick;}
+.rightSubBox.left{width:215px;height:242px;}
+.rightSubBox.right {width:215px;height:111px}
+.rightSubBox.full {width:450px;height:340px}
+.burst {position:absolute;padding:50px 0 0 135px;}
+.rightBox ul {padding:0 0 10px;}
+.sign {text-align:right;}
+ul.group {width:450px;margin:0 auto;list-style-type:disc !important;}
+	ul.group li {list-style-type:disc !important;}
+
+/* Admin ********************************************/
+.adminWelcome {float:left;width:400px;}
+.adminLogout {float:right;}
+.adminTab {position:absolute;margin:2px 0 0 459px;width:188px;color:#000000;text-shadow:none;padding:3px;height:135px;
+					 background-color:#ffffff;border-radius:5px;}
+
+	

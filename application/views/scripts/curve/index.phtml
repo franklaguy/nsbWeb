@@ -1,0 +1,20 @@
+<style>#leftPanel {display:none;}</style> <!-- Turn off left Rail - Remove for Framework format -->
+
+<!-- main navigator - begin -->
+	<ul id="main_navi">   
+		<li class="active"><strong>the Curve</strong></li>   
+		<li><strong>HTML5</strong></li> 
+		<li><strong>CSS3</strong></li> 
+		<li><strong>jQuery</strong></li> 
+	</ul> 
+<!-- main navigator - end -->	
+	
+	<div id="main"> <!-- root element for the main scrollable --> 
+		<div id="pages"> <!-- root element for pages --> 
+	 		<?php include_once 'page1.phtml'; ?>
+	 		<?php include_once 'page2.phtml'; ?>	
+	 		<?php include_once 'page3.phtml'; ?>	
+	 		<?php include_once 'page4.phtml'; ?>	
+	 	</div> 
+	</div>
+<?=$this->adminLogin;?>

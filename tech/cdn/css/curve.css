@@ -1,0 +1,105 @@
+/* Author: R. Lewis - Date: 1/18/12 - nSb web *******/
+/****************************************************/
+/* Curve ******************************************/
+/*********** scrollable ************/
+#main {position:relative;overflow:hidden;height:480px;}/* main vertical scroll */
+#pages {position:absolute;height:20000em;}/* root element for pages */
+.page {padding:10px;margin:3px;overflow: hidden;width:520px;
+	background-color:#333;border: thick outset;}/* single page */
+.scrollable {position:relative;overflow:hidden;width: 510px;height: 450px;}	/* root element for horizontal scrollables */
+.scrollable .items {width:20000em;position:absolute;clear:both;}/* root element for scrollable items */	
+.item {float:left;width:500px;height:450px;padding:10px;}	/* single scrollable item */
+.scrollable {float:left;}/* this makes it possible to add next button beside scrollable */
+
+/*********** navigator **************/
+#main_navi {float:left;border:inset;width:110px;background-image:url(../images/cage.gif);outline:0;margin-top:3px;}/* main navigator */
+ul#main_navi li {display:block;border-bottom: solid 1px #CCC;padding:2px;cursor:pointer;color:#ccc;}
+	ul#main_navi li:hover {color:#FAF7F8;}
+	ul#main_navi li.active {background-image:url(../images/metal.bmp);}
+.navi {margin:0 auto;width:200px;height:20px;} /* position and dimensions of the navigator */
+.navi a {width:8px;height:8px;float:left;margin:3px;display:block;font-size:1px;
+	background:url(http://static.flowplayer.org/tools/img/scrollable/arrow/navigator.png) 0 0 no-repeat;} /* items inside navigator */
+.navi a:hover {background-position:0 -8px;} /* mouseover state */
+.navi a.active {background-position:0 -16px;} 	/* active state (current page state) */
+.ulCurve li {padding-right:35px;}	
+
+
+/*********** basic reset ************/	
+button,input,select,textarea {color:#000 !important;text-shadow:0 0 0 #000 !important;} /* reset forms */
+section {padding:0 0 17px;}
+.asteric {color:#aaa;}
+#progressive_enhancement h1 {border:solid 1px #000;}
+
+/*********** curve ******************/
+#hint {cursor:pointer;} /* jQuery show /hide */
+#answer {width:420px;height:30px;border:1px solid #ccc;-webkit-transition:-webkit-transform 2s;} /* animated field */
+	#answer:hover {-webkit-transform:translate(3em)}
+
+/*********** special selectors *******/
+a[title^="am"] {color:#327CC5;}
+a[href*="www.allmenus.com"] {font-weight:bold;}
+
+/*********** odd/even style **********/
+#stylings li:nth-child(odd){background-color:#327CC5;}
+#stylings li:nth-child(even){background-color:#000;}
+ul.oddEven li {display:block;}
+
+/*********** text/box properties ****/
+#text_properties h1 {color:#fff;text-shadow:0 1px 9px #000,0 -1px 0 #327CC5;border:solid 1px #327CC5;
+	-webkit-border-radius:.5em 2em;-moz-border-radius:.5em;-o-border-radius:.5em;border-radius:.5em 1.5em;
+	-webkit-text-stroke:1px #327CC5;-webkit-background-clip:padding-box; padding:0 7px;
+	background-color:#327CC5;background-color:rgba(225, 0, 30, 0.8)}
+#box_properties h1 {-webkit-box-shadow:2px 2px 3px #000;-moz-box-shadow:2px 2px 3px #000;-o-box-shadow:2px 2px 3px #000;box-shadow: inset 2px 2px 3px #000;}
+
+/*********** CSS3 buttons ***********/
+.button {border-radius:10em;background-color:#327CC5;color:#fff;width:30px;font-size:2em;height:30px;text-align:center;
+	text-shadow:0 1px 9px #000;border:solid 3px red;-webkit-box-shadow:2px 2px 3px #000;margin:0 auto;}
+	.button a {text-decoration:none;color:#fff;}
+	.button a:hover {text-decoration:none;color:red;width:30px;-webkit-transition:all 2s;}
+
+/*********** columns ****************/
+section#transitions {-webkit-column-count:3;-webkit-column-width:19em;-webkit-column-gap:2px;-webkit-column-rule:3px #ccc solid ;}
+
+/*********** animation **************/
+section#animations ul li a {width:10em;background-color:#327CC5;color:#fff;margin:3px;border:2px solid black;
+	border-radius:1em;color:#fff;text-decoration:none;-webkit-transition:all 2s;}
+	section#animations ul li a:hover {width:15em;border:2px solid green;}
+
+/*********** animated slider ********/
+.slide {width:460px;height:50px;background-color:#327CC5;padding:20px;}
+#slide1 {position:absolute;color:#fff;opacity:1;}
+#slide1:hover {opacity:0;-webkit-transition:opacity 2s;}
+#slide2 {color:#327CC5;background-color:#327CC5;-webkit-transition:-webkit-transform 2s;-webkit-transform:scale(.1);}
+#slide2:hover {background-color:#000;-webkit-transform:scale(1)}
+
+/*********** background clipping ****/
+.clip {margin:0 20px 10px;padding:10px;background-color:#000;
+	-webkit-background-clip:padding-box;-webkit-background-origin:padding-box;}
+
+/*********** basic gradient *********/
+.gradient {padding:7px;color:#000;text-shadow:0 0 0 #000;
+	background-image:-moz-linear-gradient(top, #ffffff, #327CC5);
+	background-image:-webkit-linear-gradient(top, #ffffff, #327CC5); }
+
+/*********** animation **************/
+.rotate {height:50px;width:75px;border:3px solid #ccc;background-color:#327CC5;color:#fff;margin:0 auto;
+	-webkit-transition:-webkit-transform 2s ease-in;float:left;}
+.rotate:hover {-webkit-transform:scale(2) rotate(180deg)}
+.translate {height:50px;width:75px;border:3px solid #ccc;background-color:#327CC5;color:#fff;margin:0 auto;
+	-webkit-transition:-webkit-transform 2s;float:left;}
+.translate:hover {-webkit-transform:translate(3em)}
+.skew {height:50px;width:75px;border:3px solid #ccc;background-color:#327CC5;color:#fff;margin:0 auto;
+	-webkit-transition:-webkit-transform 2s;float:left;}
+.skew:hover {-webkit-transform:skew(90deg)}
+.rotate_3D {height:50px;width:75px;border:3px solid #ccc;background-color:#327CC5;color:#fff;margin:0 auto;
+	-webkit-transform-origin:center center;-webkit-transition:-webkit-transform 2s;float:left;}
+.rotate_3D:hover {-webkit-transform:rotateX(-360deg)}
+.rotate_right {height:50px;width:75px;border:3px solid #ccc;background-color:#327CC5;color:#fff;margin:0 auto;
+	-webkit-transform-origin:right right;-webkit-transform-style:preserve-3d;-webkit-transition:-webkit-transform 2s;float:left;}
+.rotate_right:hover {-webkit-transform:rotateY(-360deg)}
+	
+/*********** web fonts **************/
+@font-face{font-family: eagle;
+	src: url('http://westciv.com/css3Fonts/fonts/CollegiateFLF/collegiateblackflf-webfont.eot');
+	src: url('../images/SHOWG.ttf') format("truetype")}
+#web_fonts h2, #web_fonts p {font-family:eagle; font-size:14px;}

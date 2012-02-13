@@ -1,0 +1,13 @@
+<section id="video">
+	<h1>Playing video using HTML5</h1>
+	<p>The video /audio tag is used with a fallback method. The browser creates the controls and method of play pending viable format. The most used formats are mp4, ogg, webM and vorbis and ofcourse .swf via objects.</p>
+	<video preload="auto" controls style="height:300px;width:300px;" poster="cdn/images/6SThtmlEmail.png">
+		<source src="assets/Campusfood_FINAL.m4v" type="video/mp4">
+		<source src="movie.ogg" type="video/ogg">
+		<object width=300 height=300 data="movie.swf">
+			<param name="movie"  value="">
+			<embed src="movie.swf" width=300 height=300>
+		</object>
+		<p>Browser won't display</p>
+	</video>
+</section>

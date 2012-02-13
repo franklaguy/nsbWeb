@@ -1,0 +1,21 @@
+<section id="stylings">
+	<p>Many features are available including embedding fonts, gradients and transitions, all now available using CSS3. 
+		Some of these will come to replace javascript, animated gif's and even flash in some instances. Ofcourse javascript has irreplaceable usefullness
+		in other area's, the fact that css can pick up the slack in area's involving things such as rotating images,roll-overs
+		 and more is remarkable indeed.</p>
+		<h2>Selectors:</h2> 
+		<p>One cool thing you can do with CSS3 is choose selectors based on unique tags and id's. If you took a look at the source code 
+		on this page you will see a section tag with an id name. This id can be called to select any other tag or attribute child.</p>
+		<p>Tags can also be given individual attributes such as this link <a href="http://www.allmenus.com" title="am"> Allmenus</a>.
+		The css here calls the title attribute as well as pre-sets the a tag searching for any a tag link starting with 
+		<a href="http://www.allmenus.com" title="am">Allmenus.com</a>. These are 2 methods either of which could come in handy 
+		(perhaps when doing partner sites or promotions).</p>
+		<textarea style="width:400px" readonly>a[title^="am"] {color:#327CC5;} and/or a[href*="www.allmenus.com"] {font-weight:bold;}</textarea>
+		<ul class="oddEven">
+			<li><h3>This is an example of a ul tag with odd and even colored li tags</h3></li>
+			<li>#id li:nth-child(odd) gives color to only the odd numbered li tags </li>
+			<li>This also works on tables with tr and td tags</li>
+			<li>Does not work on IE 5 on a Mac... this would be used as a feature and not a standard</li>
+			<li>Note: inm:not([alt]) checks for whether or not an img has as alt tag... <br />great for validation!</li>
+		</ul>
+</section>

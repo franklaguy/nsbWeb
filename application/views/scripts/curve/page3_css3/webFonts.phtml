@@ -1,0 +1,15 @@
+<section id="web_fonts">
+	<h2>Web Fonts</h2>
+	<p>Here I have embedded a font using font type eot and ttf to deal with the cross browser specificity. It basically links to the url in css3 using the @font-face rule
+	whereby the font is defined. Once the font-face/font-family is defined it's used in the h2 tag or what ever tag we like. EOT is used for IE and ttf is used for non-ie browsers.</p>
+	<p>Another font format emerging in modern browsers is woff.</p>
+	<p>One drawback in using non-standard fonts would be that the font would have to load into the browser and be cached. What this means is the 1st time a user goes to 
+	a page with embedded fonts there may be a slight delay in the loading of the font. Currently there is not much that can be done about that. It's possible that there may be an 
+	HTML5 approach to caching which may help ,however currently, it would not be fully developed and supported therefore we may just have to live with the slight delay.</p>
+	<p>iPhone/iPad no longer supports embedding fonts. Other mobile devices do not in most cases either. There are SVG font shapes available however SVG is not recommended for 
+	web fonts. SVG is however great for images especially when it comes to images which will be reused and resized. It's actually the preferred way to go.</p>
+	<textarea style="width:460px;height:75px;" readonly>@font-face{font-family: eagle;
+	src: url('path/to/font/collegiateblackflf-webfont.eot');
+	src: url('EAGLBK__.ttf') format("truetype")}
+#web_fonts h2, #web_fonts p {font-family:eagle; font-size:14px;}</textarea>
+</section>

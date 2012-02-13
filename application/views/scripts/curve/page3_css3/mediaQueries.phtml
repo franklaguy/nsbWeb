@@ -1,0 +1,19 @@
+<section>
+	<h2>Media Queries</h2>
+	<p>To briefly cover media queries, there are many browser types which may need to be catered to. For instance, we may want to style based on media="print" or media="tv", 
+	which basically means we style for print or tv. We also may want to style based on screen size or resolution:</p>
+	<p>ex:</p>
+		<ul><li>@media screen and (max-width: 400px;){style} </li></ul>
+	<p>ex 2:</p>
+	<ul>
+		<li>@media (orientation:portrait){.style {height:1px;}}</li>
+	</ul>
+	<p>This example will only style for a screen with a set max width.</p>
+	<p> In this case, if the screen is a mini-computer, net book or mobile device then the stylesheet will display.
+	If not the style will be ignored. That being said it wouldn't be a good idea to fragment the stylesheet. Modern mobile devices respond to screen along with all other browsers. 
+	Specificity may come into play in optimizing for smaller screens or much larger screen, even tv's with web browsers built into them and gaming. However, best 
+	practices suggest keeping code small and developing with a project in mind that will serve the intended purpose while keeping in mind the many browsers that may be displaying
+	the site or app.</p>
+	<p id="hint"><b>HINT</b></p>
+	<div id="answer"><p><b>Only use Media Queries for selective targeting.</b></p></div>
+</section>
