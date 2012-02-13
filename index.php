@@ -1,1 +1,1 @@
-<?php header ("Location: http://www.noveltysoundbytes.com/tech/"); ?>
+<?php header ("Location: http://localhost:10088/nsbWeb/tech/"); ?>
